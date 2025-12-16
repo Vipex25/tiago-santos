@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tiago Santos | Production & Process Dept.</title>
+
+  <!-- Anti-cache geral -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <style>
+    :root {
+      --orange: #e9540d;
+      --blue: #007398;
+      --bg: #f5f5f5;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: var(--bg);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px 16px;
+      color: #222;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 14px;
+    }
+
+    h1 {
+      margin: 6px 0 4px;
+      color: var(--blue);
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .role {
+      margin: 0 0 12px;
+      color: var(--orange);
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .contact {
+      margin-bottom: 10px;
+    }
+    .contact a {
+      display: block;
+      color: var(--blue);
+      text-decoration: none;
+      margin: 6px 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .contact a:hover {
+      color: var(--orange);
+    }
+
+    .btn-download {
+      display: inline-block;
+      margin: 10px 0 18px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: var(--orange);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+    .btn-download:hover {
+      background: var(--blue);
+    }
+
+    .icons {
+      margin-top: 8px;
+      margin-bottom: 18px;
+    }
+    .icons a {
+      display: inline-block;
+      margin: 6px 10px;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .icons a:hover {
+      color: var(--orange);
+    }
+
+    .logo {
+      display: block;
+      margin: 20px auto 0;
+      max-width: 140px;
+      height: auto;
+      opacity: 0.95;
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        padding: 18px;
+      }
+      .photo {
+        width: 108px;
+        height: 108px;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="tiago-santos.jpg?v=1" alt="Tiago Santos" class="photo" />
+
+    <h1>Tiago Santos</h1>
+    <p class="role">Production & Process Dept.</p>
+
+    <div class="contact">
+      <a href="tel:+351913698495">📞 +351 913 698 495</a>
+      <a href="mailto:tiago.santos@vipex.pt">✉️ tiago.santos@vipex.pt</a>
+    </div>
+
+    <a id="btn-vcard" href="files/tiago.santos.vcf" download class="btn-download">💾 Download vCard</a>
+
+    <div class="icons">
+      <a href="https://maps.app.goo.gl/QeAVZR8oF2E2f2Xu5" target="_blank">📍 Location</a>
+      <a href="https://www.vipex.pt/en/home" target="_blank">🌐 Website</a>
+      <a href="https://pt.linkedin.com/company/vipex-plastics" target="_blank">💼 LinkedIn</a>
+    </div>
+
+    <img src="logo.png?v=1" alt="Vipex Logo" class="logo" />
+  </div>
+
+  <!-- Anti-cache do vCard -->
+  <script>
+    const btn = document.getElementById('btn-vcard');
+    const timestamp = new Date().getTime();
+    const originalHref = btn.getAttribute('href');
+    btn.setAttribute('href', originalHref + '?v=' + timestamp);
+  </script>
+</body>
+</ht

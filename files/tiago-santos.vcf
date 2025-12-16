@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Tiago Santos
+N:;Tiago Santos;;;
+TITLE:Production & Process Dept.
+TEL;TYPE=CELL:+351913698495
+EMAIL;TYPE=INTERNET:tiago.santos@vipex.pt
+URL:https://vipex25.github.io/tiago-santos /
+item1.URL;type=pref:https://pt.linkedin.com/company/vipex-plastics
+item1.X-ABLabel:LinkedIn
+item2.URL;type=pref:https://www.vipex.pt/
+item2.X-ABLabel:Website
+item3.URL;type=pref:https://maps.app.goo.gl/QeAVZR8oF2E2f2Xu5
+item3.X-ABLabel:Location
+END:VCARD
